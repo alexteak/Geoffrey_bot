@@ -4,6 +4,8 @@ const TApi = require("node-telegram-bot-api")
 
 const bot = new TApi(token, {polling: true});
 
+const answers = ["NO", "NO!", "NoOOooOOo", "Die a violent death", "Not a chance", "I did it", "What's a sandwich?"]
+
 bot.on("message", msg => {
     console.log("get")
     const text = msg.text;
@@ -11,11 +13,9 @@ bot.on("message", msg => {
     const chatname = msg.chat.title;
     let words = text.split(" ")
     if(words.includes("make") && (words.includes("sandwich") || words.includes("sandwich?"))){
-        bot.sendMessage(chatId, "NO")
+        bot.sendMessage(chatId, answers[Math.floor(Math.random()*answers.length)])
+        console.log("responded")
     }
-
-
-        console.log(chat.id)
     }
 )
 
