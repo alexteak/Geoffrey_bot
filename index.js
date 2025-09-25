@@ -31,3 +31,10 @@ bot.on("message", msg => {
     }
     }
 )
+
+bot.addListener("UpdateNewMessage", message => {
+    console.log("foo");
+    
+});
+
+
