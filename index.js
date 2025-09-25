@@ -1,4 +1,4 @@
-const token = "7507152236:AAG91ghuQEm_HDiS5KKQCwSxYUE45vtD7-A"
+const token = "7507152236:AAG_eugO13XpLNW9GCzvzejRt0IFfqeo21M"
 
 const TApi = require("node-telegram-bot-api")
 
